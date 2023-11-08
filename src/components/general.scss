@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .text-yellow,
 .text-yellow:active,
 .text-yellow:focus,
@@ -7,4 +9,7 @@
 .text-yellow:hover {
   color: #ffd66f;
   text-shadow: 0 0 2px #ffd66f;
+}
+body {
+  background-color: #f8f8f8;
 }
