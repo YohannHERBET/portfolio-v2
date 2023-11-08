@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .navbar-toggler, .navbar-toggler:focus {
   border: 2px solid #8ECAE6;
@@ -35,5 +34,8 @@
     height: 3rem;
     border-radius: 50%;
     box-shadow: 0 0 10px #081837;
+  }
+  .container-links {
+    margin-right: 1rem;
   }
 }

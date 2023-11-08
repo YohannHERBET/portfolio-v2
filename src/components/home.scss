@@ -1,0 +1,21 @@
+.photo-container {
+
+  .img-profil-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(2, 48, 71, 0.59);
+  }
+  h2 {
+    color: #023047;
+
+    & > span {
+      color: #FFB703;
+    }
+  }
+  h5 {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #023047;
+  }
+}
