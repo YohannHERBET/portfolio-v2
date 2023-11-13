@@ -17,7 +17,7 @@ const Home = () => {
     `)
 
     return (
-        <div className="w-100 pt-5 d-flex justify-content-center">
+        <div className="w-100 py-5 my-5 d-flex justify-content-center">
             <div className="photo-container d-flex flex-column align-items-center text-center">
                 <Img className="img-profil-img" fluid={data.imgPhotoProfil.childImageSharp.fluid} />
                 <h2 className="mt-3">Hey, je suis <span>Yohann Herbet</span>,</h2>

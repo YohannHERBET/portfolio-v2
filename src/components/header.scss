@@ -18,24 +18,35 @@
   }
 }
 
-.header-img {
+.container-header-img {
   display: none;
 }
 
 .container-links > * {
+  font-weight: bold;
   font-size: 1.2rem;
   font-family: "Roboto", "sans-serif";
 }
 
 @media screen and (min-width: 768px) {
-  .header-img {
+  .container-header-img {
     display: block;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #081837;
+
+    .header-img {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #081837;
+    }
   }
   .container-links {
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-links > * {
+    font-size: 1.5rem;
   }
 }
