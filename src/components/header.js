@@ -20,7 +20,7 @@ const Header = () => {
   `)
 
     return (
-        <header style={{padding: "3rem"}} id="home">
+        <header style={{padding: "2.3rem"}} id="home">
             <Navbar
                 collapseOnSelect
                 style={{
