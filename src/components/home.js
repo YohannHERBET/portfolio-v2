@@ -32,7 +32,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="container-mobile-socials d-flex mt-3 mt-md-4">
+            <div className="container-mobile-socials d-flex d-md-none mt-3 mt-md-4">
                 <a href="https://www.linkedin.com/in/yohannherbet/" target="_blank" rel="noreferrer">
                     <Img className="mobile-socials" fluid={data.imglogoLinkedin.childImageSharp.fluid} alt="logo linkedin" />
                 </a>
