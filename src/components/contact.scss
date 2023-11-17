@@ -1,0 +1,81 @@
+.contact-form-container {
+  margin: 60px 1.5rem 0 1.5rem;
+
+  @media screen and (min-width: 1430px) {
+    margin: 60px 4rem 0 4rem;
+  }
+
+  form {
+    background-color: #023047;
+    padding: 2rem 0 2rem 0;
+    border-radius: 20px;
+    border: 5px solid #8ECAE6;
+    box-shadow: 0 0 9px #219EBC;
+
+    @media (max-width: 768px) {
+      padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .logo-horizontal {
+      width: 7rem;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    h4 {
+      color: #FFB703;
+      font-size: 1.5rem;
+    }
+    input,
+    textarea {
+      color: #f8f8f8 !important;
+      border: 2px solid #219EBC !important;
+      background-color: transparent !important;
+    }
+    input:focus,
+    textarea:focus {
+      box-shadow: 0 0 9px #8ECAE6 !important;
+      border-color: #8ECAE6 !important;
+      color: #95c7ec !important;
+    }
+    label {
+      color: #FFB703;
+    }
+    .form-button {
+      background: #219EBC !important;
+      color: rgb(210, 220, 255);
+      border: none;
+      padding: 0.5rem 2rem;
+      border-radius: 6px;
+      width: 50%;
+
+      &:hover {
+        color: #fff4d7 !important;
+        background: #FFB703 !important;
+      }
+      @media (min-width: 992px) {
+        width: 30%;
+      }
+    }
+
+    .asSuccess {
+      text-shadow: 0 0 5px #8ECAE6;
+      color: #8ECAE6!important;
+    }
+
+    .asError {
+      text-shadow: 0 0 5px red;
+      color: red !important;
+    }
+    #message {
+      min-height: 16rem;
+      min-width: 100%;
+      overflow-y: auto;
+    }
+
+  }
+}
