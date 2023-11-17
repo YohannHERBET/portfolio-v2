@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./header"
 import Footer from "./footer"
 import "./general.scss"
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
     <>
         <Header siteTitle={data.site.siteMetadata?.title || `portfolio`} />
         <main>{children}</main>
+        <ScrollToTopButton />
         <Footer />
     </>
   )
