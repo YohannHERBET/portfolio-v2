@@ -51,7 +51,7 @@ const ProjetCard = ({
 
     return (
         <>
-            <Card onClick={handleShow} className="mb-5 mx-2" id={`#${title.split(' ').join('-')}`} style={{ width: '25rem', boxShadow: '0 0 20px #219EBC', border: '2px solid #8ECAE6' }}>
+            <Card onClick={handleShow} className="mb-5 mx-2" id={`#${title.split(' ').join('-')}`} style={{ width: '22rem', boxShadow: '0 0 20px #219EBC', border: '2px solid #8ECAE6' }}>
                 <Card.Link href={`#${title.split(' ').join('-')}`} style={{ textDecoration: 'none' }}>
                     <Img fluid={image} alt={alt} className="card__img-top" />
                     <Card.Body className="card__body d-flex flex-column justify-content-between" style={{ height: '16rem' }}>
