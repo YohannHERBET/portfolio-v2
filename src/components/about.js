@@ -66,7 +66,7 @@ const About = () => {
             <div className="d-flex flex-column align-items-center mb-5 container-end">
                 <span>Bref</span>
                 <Img className="robot-end" fluid={data.imgRobotDeveloper.childImageSharp.fluid} alt="un robot qui tape sur un clavier pour écrire du code" />
-                <span id="projets">je suis développeur</span>
+                <span>je suis développeur</span>
             </div>
         </div>
     );

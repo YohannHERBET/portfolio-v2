@@ -62,16 +62,19 @@ const ProjectSection = () => {
     })
 
     return  (
-        <div style={{ marginTop: '100px' }} className="anchor mx-4 container-project">
-            <h1 className="mb-5 mt-5 text-center">Mes Projets</h1>
-            <Row>
-                {projectWithImg.map((projet, index) => (
-                    <Col key={[index]} className="mb-5 mt-3 d-flex justify-content-center">
-                        <ProjetCard {...projet} />
-                    </Col>
-                ))}
-            </Row>
-        </div>
+        <>
+            <div className="anchor" id="projets" />
+            <div style={{ marginTop: '100px' }} className="mx-4 container-project">
+                <h1 className="mb-5 mt-5 text-center">Mes Projets</h1>
+                <Row>
+                    {projectWithImg.map((projet, index) => (
+                        <Col key={[index]} className="mb-5 mt-3 d-flex justify-content-center">
+                            <ProjetCard {...projet} />
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+        </>
     )
 };
 
