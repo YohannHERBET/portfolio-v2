@@ -91,7 +91,7 @@ const ProjectSection = () => {
     })
 
     return  (
-        <>
+        <section>
             <div className="anchor" id="projets" />
             <div style={{ marginTop: '100px' }} className="mx-4 container-project">
                 <div className="d-flex flex-column align-items-center">
@@ -106,7 +106,7 @@ const ProjectSection = () => {
                     ))}
                 </Row>
             </div>
-        </>
+        </section>
     )
 };
 

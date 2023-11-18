@@ -31,7 +31,7 @@ const Home = () => {
     `)
 
     return (
-        <>
+        <section>
             <div className="container-mobile-socials d-flex d-md-none mt-3 mt-md-4">
                 <a href="https://www.linkedin.com/in/yohannherbet/" target="_blank" rel="noreferrer">
                     <Img className="mobile-socials" fluid={data.imglogoLinkedin.childImageSharp.fluid} alt="logo linkedin" />
@@ -48,7 +48,7 @@ const Home = () => {
                     <h5  id="about">je place l'écoute et la qualité au coeur de mon travail</h5>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

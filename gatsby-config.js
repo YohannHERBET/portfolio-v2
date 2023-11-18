@@ -18,6 +18,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-purgecss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

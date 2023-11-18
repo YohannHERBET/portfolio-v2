@@ -71,7 +71,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="contact-form-container">
+        <section className="contact-form-container">
             <div className="anchor" id="contact" />
             <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
                 <h2 className="mb-4 text-center">Contact</h2>
@@ -114,7 +114,7 @@ const ContactForm = () => {
                 )}
                 <Button type="submit" className="form-button mt-4">Envoyer</Button>
             </Form>
-        </div>
+        </section>
     );
 };
 

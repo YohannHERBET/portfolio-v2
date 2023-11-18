@@ -39,9 +39,9 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="align-items-center w-100 justify-content-center">
                         <div className="container-links d-flex flex-column flex-md-row align-items-center">
-                            <Nav.Link as={Link} to="#home" onClick={() => setExpanded(false)} className="text-yellow mx-md-4">Accueil</Nav.Link>
+                            <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)} className="text-yellow mx-md-4">Accueil</Nav.Link>
                             <Nav.Link as={Link} to="#about" onClick={() => setExpanded(false)} className="text-yellow mx-md-4">À propos</Nav.Link>
-                            <Nav.Link as={Link} to="#home" className="container-header-img">
+                            <Nav.Link as={Link} to="/" className="container-header-img">
                                 <Img className="header-img mx-md-4" fluid={data.imgHeader.childImageSharp.fluid} />
                             </Nav.Link>
                             <Nav.Link as={Link} to="#projets" onClick={() => setExpanded(false)} className="text-yellow mx-md-4">Projets</Nav.Link>
