@@ -16,6 +16,6 @@ const IndexPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="portfolio de Yohann HERBET, développeur fullstack" />
+export const Head = () => <Seo title="Page d'accueil" />
 
 export default IndexPage

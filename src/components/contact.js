@@ -23,6 +23,13 @@ const ContactForm = () => {
               }
             }
           }
+          imgRobotMail: file(relativePath: { eq: "robot-mail.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
         }
     `)
     const [info, setInfo] = useState(false);
@@ -68,15 +75,18 @@ const ContactForm = () => {
             <div className="anchor" id="contact" />
             <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
                 <h1 className="mb-4 text-center">Contact</h1>
-                <div className="d-flex w-75 w-md-50 justify-content-center mb-5">
-                    <a className="logo-horizontal" href="https://github.com/YohannHERBET/" target="_blank" rel="noreferrer">
-                        <Img fluid={data.imgGithubHorizontal.childImageSharp.fluid} alt="logo de github" />
-                    </a>
-                    <span className="invisible mx-2"></span>
-                    <a className="logo-horizontal" href="https://www.linkedin.com/in/yohannherbet/" target="_blank" rel="noreferrer">
-                        <Img fluid={data.imgLinkedinHorizontal.childImageSharp.fluid} alt="logo de linkedin" />
-                    </a>
+                <div className="d-flex flex-column align-items-center">
+                    <div className="d-flex w-75 w-md-50 justify-content-center mb-2">
+                        <a className="logo-horizontal" href="https://github.com/YohannHERBET/" target="_blank" rel="noreferrer">
+                            <Img fluid={data.imgGithubHorizontal.childImageSharp.fluid} alt="logo de github" />
+                        </a>
+                        <span className="invisible mx-2"></span>
+                        <a className="logo-horizontal" href="https://www.linkedin.com/in/yohannherbet/" target="_blank" rel="noreferrer">
+                            <Img fluid={data.imgLinkedinHorizontal.childImageSharp.fluid} alt="logo de linkedin" />
+                        </a>
+                    </div>
                 </div>
+                <Img className="mb-3 robot-mail" fluid={data.imgRobotMail.childImageSharp.fluid} alt="robot qui donne le courriel" />
                 <h4 className="mb-4 text-center">Envoyer un email :</h4>
                 <Form.Group controlId="name" as={Col} xs="12" md="8" lg="6" className="mb-3">
                     <Form.Label>Nom :</Form.Label>

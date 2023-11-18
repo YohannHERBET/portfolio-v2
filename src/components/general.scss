@@ -6,10 +6,14 @@
 .text-yellow:visited {
   color: #FFB703;
 }
-.text-yellow:hover {
-  color: #ffd66f;
-  text-shadow: 0 0 2px #ffd66f;
+
+@media screen and (min-width: 1024px) {
+  .text-yellow:hover {
+    color: #ffd66f;
+    text-shadow: 0 0 2px #ffd66f;
+  }
 }
+
 body {
   background-color: #f8f8f8;
 }

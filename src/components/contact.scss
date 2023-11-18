@@ -16,6 +16,14 @@
       padding: 2rem 1rem 2rem 1rem;
     }
 
+    .robot-mail {
+      width: 14rem;
+      filter: drop-shadow(0px 0px 3px #219EBC);
+
+      @media (min-width: 992px) {
+        width: 18rem;
+      }
+    }
     .logo-horizontal {
       width: 7rem;
 
