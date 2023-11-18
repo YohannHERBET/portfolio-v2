@@ -74,7 +74,7 @@ const ContactForm = () => {
         <div className="contact-form-container">
             <div className="anchor" id="contact" />
             <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
-                <h1 className="mb-4 text-center">Contact</h1>
+                <h2 className="mb-4 text-center">Contact</h2>
                 <div className="d-flex flex-column align-items-center">
                     <div className="d-flex w-75 w-md-50 justify-content-center mb-2">
                         <a className="logo-horizontal" href="https://github.com/YohannHERBET/" target="_blank" rel="noreferrer">

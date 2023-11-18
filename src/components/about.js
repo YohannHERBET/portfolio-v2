@@ -46,7 +46,7 @@ const About = () => {
 
     return (
         <div className="container-about p-3 mt-5 mb-5">
-            <h3 className="pt-3 pb-4 pb-lg-5">À propos</h3>
+            <h2 className="pt-3 pb-4 pb-lg-5">À propos</h2>
             <div className="d-flex flex-column align-items-center flex-lg-row text-lg-center mb-5 mx-5">
                 <Img className="img-robot first" style={{ filter: 'drop-shadow(0 0 5px black)' }} fluid={data.imgRobot.childImageSharp.fluid} alt="un robot qui tient un outil" />
                 <p className="mb-0">Passionné par mon métier, je m'intéresse particulièrement à la qualité logicielle tel un artisan du code, j'aime proposer, en accord avec les enjeux business, des solutions techniques performantes, modulaires et durables.</p>
