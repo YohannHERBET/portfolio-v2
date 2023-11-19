@@ -23,3 +23,14 @@ body {
   top: -100px !important;
   visibility: hidden !important;
 }
+
+.container-404 {
+  .img-robot-404 {
+    width: 15rem;
+    filter: drop-shadow(0px 0px 1px black);
+
+    @media screen and (min-width: 992px) {
+      width: 20rem;
+    }
+  }
+}

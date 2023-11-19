@@ -1,14 +1,11 @@
 import * as React from "react"
-
+import Error404 from "../components/error404";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-      <div className="mt-5 pt-5 text-center" style={{ marginBottom : '50rem' }}>
-        <h1 style={{ color: '#FFB703' }}>404: Page non trouvée, tu as dû faire une erreur</h1>
-        <p>Il semblerait que tous les chemins ne mènent pas à Rome.</p>
-      </div>
+    <Error404 />
   </Layout>
 )
 
