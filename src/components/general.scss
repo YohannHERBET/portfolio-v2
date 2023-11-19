@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.text-yellow,
+.text-yellow:active,
+.text-yellow:focus,
+.text-yellow:visited {
+  color: #FFB703 !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-yellow:hover {
+    color: #ffd66f !important;
+    text-shadow: 0 0 2px #ffd66f !important;
+  }
+}
+
+body {
+  background-color: #f8f8f8 !important;
+}
+.anchor {
+  display: block !important;
+  position: relative !important;
+  top: -100px !important;
+  visibility: hidden !important;
+}
+
+.container-404 {
+  .img-robot-404 {
+    width: 15rem;
+    filter: drop-shadow(0px 0px 1px black);
+
+    @media screen and (min-width: 992px) {
+      width: 20rem;
+    }
+  }
+}

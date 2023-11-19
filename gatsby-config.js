@@ -15,14 +15,22 @@ module.exports = {
     siteUrl: `https://yohann-herbet.fr/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/favicon.ico`,
       },
     },
     `gatsby-transformer-sharp`,

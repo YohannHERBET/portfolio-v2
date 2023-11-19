@@ -1,0 +1,73 @@
+.container-about {
+  background-color: #023047;
+  border-radius: 20px;
+  margin: 0 1rem 0 1rem;
+  text-align: center;
+  box-shadow: 0 0 9px #219EBC;
+  border: 5px solid #8ECAE6;
+
+  h2 {
+    color: #FFB703;
+    text-shadow: 0 0 2px #FFB703;
+    font-size: 2.8rem;
+  }
+  .img-robot {
+    width: 8rem;
+  }
+  p {
+    color: #8ECAE6;
+    font-size: 1.4rem;
+    text-shadow: 0 0 2px #95c7ec;
+    font-family: "Roboto", "sans-serif";
+  }
+
+  .container-end {
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 580px) {
+      font-size: 3.5rem;
+    }
+
+    span:first-of-type {
+      color: #FFB703;
+      text-shadow: 0 0 2px black;
+    }
+    span:last-of-type {
+      color: #FFB703;
+    }
+    .robot-end {
+      filter: drop-shadow(0 0 1px black);
+      width: 15rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    padding: 1rem 1.8rem !important;
+
+    .img-robot {
+      width: 15rem;
+    }
+    .img-robot.first {
+      width: 20rem;
+    }
+    .container-end {
+      span:first-of-type {
+        font-size: 4.5rem;
+      }
+      .robot-end {
+        width: 20rem;
+      }
+      span:last-of-type {
+        font-size: 4rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1430px) {
+    margin: 0 4rem;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 0 5rem !important;
+  }
+  @media screen and (min-width: 1700px) {
+    padding: 0 12rem !important;
+  }
+}
