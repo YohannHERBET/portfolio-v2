@@ -5,10 +5,9 @@ import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
+    <Seo title="404: Page non trouvée" description="La page que vous cherchez semble introuvable." />
     <Error404 />
   </Layout>
 )
-
-export const Head = () => <Seo title="404 Page non trouvée" />
 
 export default NotFoundPage

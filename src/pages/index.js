@@ -8,7 +8,7 @@ import ContactForm from "../components/contact";
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Page d'accueil" />
+    <Seo />
     <Home />
     <About />
     <ProjectSection />
