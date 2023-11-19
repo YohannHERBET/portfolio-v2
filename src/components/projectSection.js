@@ -93,7 +93,7 @@ const ProjectSection = () => {
     return  (
         <section>
             <div className="anchor" id="projets" />
-            <div style={{ marginTop: '100px' }} className="mx-4 container-project">
+            <div style={{ marginTop: '100px' }} className="container-project">
                 <div className="d-flex flex-column align-items-center">
                     <h2 className="mb-4 mt-5 text-center">Mes Projets</h2>
                     <Img className="mb-3 robot-project" fluid={data.robotEcrou.childImageSharp.fluid} alt="un robot qui cherche un écrou" />

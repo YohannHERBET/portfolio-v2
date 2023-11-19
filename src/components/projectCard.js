@@ -51,13 +51,13 @@ const ProjetCard = ({
 
     return (
         <article>
-            <Card onClick={handleShow} className="mb-5 mx-2" id={`#${title.split(' ').join('-')}`}>
+            <Card onClick={handleShow} className="mb-5 mx-2 card-project" id={`#${title.split(' ').join('-')}`}>
                 <Card.Link href={`#${title.split(' ').join('-')}`} style={{ textDecoration: 'none' }}>
-                    <Img fluid={image} alt={alt} className="card__img-top" />
-                    <Card.Body className="card__body d-flex flex-column justify-content-between" style={{ height: '16rem' }}>
+                    <Img fluid={image} alt={alt} className="card-project__img-top" />
+                    <Card.Body className="card-project__body d-flex flex-column justify-content-between" style={{ height: '16rem' }}>
                         <>
-                            <Card.Title className="text-center card__title">{title}</Card.Title>
-                            <Card.Text className="card__text">{description}</Card.Text>
+                            <Card.Title className="text-center card-project__title">{title}</Card.Title>
+                            <Card.Text className="card-project__text">{description}</Card.Text>
                             <Button
                                 style={{
                                     background: 'rgb(162 185 255 / 0%)',
@@ -65,7 +65,7 @@ const ProjetCard = ({
                                     border: 'none',
                                     width: '100%',
                                 }}
-                                className="d-flex justify-content-center card__button mb-3"
+                                className="d-flex justify-content-center card-project__button mb-3"
                             >
                                 En savoir plus
                             </Button>
@@ -74,7 +74,7 @@ const ProjetCard = ({
                 </Card.Link>
             </Card>
 
-            <Modal show={show} onHide={handleShow} size="lg" centered className={`${show ? 'modal-appear' : ''}`}>
+            <Modal show={show} onHide={handleShow} size="lg" centered className={`${show ? 'modal-appear' : '', 'modal-project'}`}>
                 <Modal.Header closeButton closeVariant="white">
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>

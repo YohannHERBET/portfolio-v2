@@ -1,11 +1,11 @@
 .contact-form-container {
-  margin: 60px 1.5rem 0 1.5rem;
+  margin: 60px 1rem 0 1rem;
 
   @media screen and (min-width: 1430px) {
     margin: 60px 4rem 0 4rem;
   }
 
-  form {
+  .contact-form {
     background-color: #023047;
     padding: 2rem 0 2rem 0;
     border-radius: 20px;
@@ -16,11 +16,22 @@
       padding: 2rem 1rem 2rem 1rem;
     }
 
+    &_group {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 75%;
+      }
+      @media (min-width: 1024px) {
+        width: 50%;
+      }
+    }
+
     .robot-mail {
-      width: 14rem;
+      width: 13rem;
       filter: drop-shadow(0px 0px 3px #219EBC);
 
-      @media (min-width: 992px) {
+      @media screen and (min-width: 768px) {
         width: 18rem;
       }
     }
@@ -39,20 +50,21 @@
       color: #FFB703;
       font-size: 1.5rem;
     }
-    input,
+    &_input,
     textarea {
       color: #f8f8f8 !important;
       border: 2px solid #219EBC !important;
       background-color: transparent !important;
     }
-    input:focus,
+    &_input:focus,
     textarea:focus {
       box-shadow: 0 0 9px #8ECAE6 !important;
       border-color: #8ECAE6 !important;
       color: #95c7ec !important;
     }
-    label {
+    &_label {
       color: #FFB703;
+      margin-bottom: 0.5rem;
     }
     .form-button {
       background: #219EBC !important;

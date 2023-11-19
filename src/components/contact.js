@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import './contact.scss';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Form, Button, Col } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 const ContactForm = () => {
 
@@ -73,7 +73,7 @@ const ContactForm = () => {
     return (
         <section className="contact-form-container">
             <div className="anchor" id="contact" />
-            <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
+            <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100 contact-form">
                 <h2 className="mb-4 text-center">Contact</h2>
                 <div className="d-flex flex-column align-items-center">
                     <div className="d-flex w-75 w-md-50 justify-content-center mb-2">
@@ -88,23 +88,23 @@ const ContactForm = () => {
                 </div>
                 <Img className="mb-3 robot-mail" fluid={data.imgRobotMail.childImageSharp.fluid} alt="robot qui donne le courriel" />
                 <h4 className="mb-4 text-center">Envoyer un email :</h4>
-                <Form.Group controlId="name" as={Col} xs="12" md="8" lg="6" className="mb-3">
-                    <Form.Label>Nom :</Form.Label>
-                    <Form.Control type="text" name="name" value={formState.name} onChange={handleChange} required minLength="2" />
+                <Form.Group className="contact-form_group d-flex flex-column mb-3" controlId="name">
+                    <Form.Label className="contact-form_label">Nom :</Form.Label>
+                    <Form.Control className="contact-form_input" type="text" name="name" value={formState.name} onChange={handleChange} required minLength="2" />
                 </Form.Group>
 
-                <Form.Group controlId="email" as={Col} xs="12" md="8" lg="6" className="mb-3">
-                    <Form.Label>Email :</Form.Label>
-                    <Form.Control type="email" name="email" value={formState.email} onChange={handleChange} required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                <Form.Group className="contact-form_group d-flex flex-column mb-3" controlId="email">
+                    <Form.Label className="contact-form_label">Email :</Form.Label>
+                    <Form.Control className="contact-form_input" type="email" name="email" value={formState.email} onChange={handleChange} required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
                 </Form.Group>
 
-                <Form.Group controlId="object" as={Col} xs="12" md="8" lg="6" className="mb-3">
-                    <Form.Label>Objet :</Form.Label>
-                    <Form.Control type="text" name="object" value={formState.object} onChange={handleChange} required />
+                <Form.Group className="contact-form_group d-flex flex-column mb-3" controlId="object">
+                    <Form.Label className="contact-form_label">Objet :</Form.Label>
+                    <Form.Control className="contact-form_input" type="text" name="object" value={formState.object} onChange={handleChange} required />
                 </Form.Group>
 
-                <Form.Group controlId="message" as={Col} xs="12" md="8" lg="6">
-                    <Form.Label>Message :</Form.Label>
+                <Form.Group className="contact-form_group d-flex flex-column" controlId="message">
+                    <Form.Label className="contact-form_label">Message :</Form.Label>
                     <Form.Control as="textarea" name="message" value={formState.message} onChange={handleChange} required minLength="10" />
                 </Form.Group>
                 {info && (

@@ -8,8 +8,11 @@
   padding: 0 1rem !important;
 
   .robot-project {
-    width: 14rem;
+    width: 12rem;
     filter: drop-shadow(0px 0px 3px black);
+    @media screen and (min-width: 768px) {
+        width: 18rem;
+    }
   }
   h2 {
     font-size: 2.8rem;
@@ -19,10 +22,6 @@
 @media screen and (min-width: 992px) {
   .container-project {
     margin: 0 2rem 0 2rem;
-
-    .robot-project {
-      width: 18rem;
-    }
   }
 }
 @media screen and (min-width: 1430px) {
@@ -36,7 +35,7 @@
   }
 }
 
-.card {
+body article .card-project {
   background: #023047;
   transition: transform 0.3s;
   border-radius: 15px;
@@ -58,10 +57,11 @@
   @media (min-width: 768px) {
     &:hover {
       transform: translateY(-10px);
-    }
-    &:hover &__button {
-      color: #fff4d7 !important;
-      background: #FFB703 !important;
+
+      .card-project__button {
+        color: #fff4d7 !important;
+        background: #FFB703 !important;
+      }
     }
   }
   &__img-top {
@@ -82,7 +82,7 @@
   }
 }
 
-.modal-content {
+body .modal-project .modal-content {
   background: #023047;
   border: 3px solid #8ECAE6;
   box-shadow: 0 0 15px #219EBC;
@@ -108,11 +108,11 @@
   }
 }
 
-.modal-header {
+body .modal-project .modal-header {
   border-bottom: none !important;
 }
 
-.modal-footer {
+body .modal-project .modal-footer {
   border-top: none !important;
 
   .btn {
@@ -130,7 +130,7 @@
     cursor: pointer;
   }
 }
-.modal-backdrop {
+body .modal-project .modal-backdrop {
   background-color: rgba(60, 78, 106, 0.5);
 }
 
@@ -151,7 +151,7 @@
   }
 }
 
-.modal-appear {
+body .modal-project .modal-appear {
   opacity: 0;
   transform: translateY(-10%);
   animation-name: modal-fade;

@@ -4,22 +4,22 @@
 .text-yellow:active,
 .text-yellow:focus,
 .text-yellow:visited {
-  color: #FFB703;
+  color: #FFB703 !important;
 }
 
 @media screen and (min-width: 1024px) {
   .text-yellow:hover {
-    color: #ffd66f;
-    text-shadow: 0 0 2px #ffd66f;
+    color: #ffd66f !important;
+    text-shadow: 0 0 2px #ffd66f !important;
   }
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8 !important;
 }
 .anchor {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
+  display: block !important;
+  position: relative !important;
+  top: -100px !important;
+  visibility: hidden !important;
 }

@@ -1,5 +1,5 @@
 
-.navbar-toggler, .navbar-toggler:focus {
+header .navbar-toggler,header .navbar-toggler:focus {
   border: 2px solid #8ECAE6;
   box-shadow: 0 0 3px #219EBC;
   padding: 0.7rem 1rem;
@@ -18,18 +18,18 @@
   }
 }
 
-.container-header-img {
+header .container-header-img {
   display: none;
 }
 
-.container-links > * {
+header .container-links > * {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Roboto", "sans-serif";
 }
 
 @media screen and (min-width: 768px) {
-  .container-header-img {
+  header .container-header-img {
     display: block;
 
     .header-img {
